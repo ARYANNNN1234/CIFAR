@@ -1,4 +1,4 @@
-# CIFAR-10 Image Classification with CNN
+# CIFAR-10 Image Classification with CNN and Interpretability
 
 ## Overview
 This project implements a Convolutional Neural Network (CNN) for multi-class image classification on the CIFAR-10 dataset. Beyond standard model training and evaluation, it delves into model interpretability using advanced techniques like Saliency Maps and GradCAM to understand how the CNN makes its predictions. The project also explores the impact of various architectural choices during experimentation.
@@ -10,6 +10,10 @@ This project implements a Convolutional Neural Network (CNN) for multi-class ima
 - **Structure:**
   - Images: `.png` files
   - Labels: `cifar10Labels.csv` maps image indices to labels
+
+You can download the dataset directly:
+- [cifar10.zip](https://infyspringboard.onwingspan.com/common-content-store/Shared/Shared/Public/lex_auth_012782825259556864334_shared/web-hosted/assets/cifar10.zip)
+  - Place this file in your project directory and extract its contents.
 
 ---
 
@@ -62,6 +66,7 @@ your_project_folder/
         └── ...
 ├── cifar10_cnn_project.py
 └── CIFAR10_checkpoint.keras    # Generated after first run
+├── cifar10.zip                # Download and extract this file
 ```
 
 ### 2. Install Dependencies
@@ -91,6 +96,7 @@ This will:
 - `cifar10/cifar10/`: CIFAR-10 image files
 - `CIFAR10_checkpoint.keras`: Saved best model checkpoint
 - `out.csv`: (Optional) Predictions on the test set
+- `cifar10.zip`: Downloadable dataset file
 
 ---
 
